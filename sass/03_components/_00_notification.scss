@@ -1,0 +1,48 @@
+.notification {
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-secondary, 0.7),
+    rgba($color-primary, 0.7)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tablet-landscape) {
+    display: none;
+  }
+
+  &:hover &__btn--close {
+    color: #fdfef3;
+    transform: scale(1.2) rotate(180deg);
+  }
+
+  &__text {
+    color: $color-black-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+
+    @include respond(tablet-landscape) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__btn--close {
+    color: $color-black-2;
+    font-size: 3.8rem;
+    line-height: 0;
+    cursor: pointer;
+
+    margin-left: 2rem;
+    transition: all 0.5s;
+
+    @include respond(tablet-landscape) {
+      font-size: 3rem;
+    }
+  }
+}
