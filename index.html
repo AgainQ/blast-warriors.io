@@ -52,8 +52,17 @@
           <ul class="navigation__list">
             <li><a class="navigation__link" href="#mint">Mint NFT</a></li>
             <li><a class="navigation__link" href="#roadmap">Roadmap</a></li>
-            <li><a class="navigation__link" href="#faq">FAQ</a></li>
-            <li><a class="navigation__link" href="#">Leaderboard</a></li>
+            <li>
+              <a class="navigation__link" href="#faq">FAQ</a>
+            </li>
+            <li>
+              <a
+                class="navigation__link"
+                href="https://blastwarriors.gitbook.io/docs"
+                target="_blank"
+                >Docs</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -133,9 +142,16 @@
             <h3 class="heading-tertiary">Launch Phase</h3>
             <p class="roadmap__text">
               Introduce the project to the market. Host initial minting event
-              where the first batch of NFTs becomes available for purchase.
-              Provide special bonuses for early supporters to lay a solid
-              foundation of trust and loyalty.
+              where the first batch of NFTs becomes available to mint. Provide
+              special bonuses for early supporters. <br />
+              Integrate
+              <a
+                class="api-link"
+                href="https://docs.blast.io/airdrop/mainnet-points-api/overview"
+                target="_blank"
+                >Blast Points API</a
+              >
+              system.
             </p>
           </div>
 
@@ -152,11 +168,10 @@
             <span class="roadmap__step">02</span>
             <h3 class="heading-tertiary">Community Building</h3>
             <p class="roadmap__text">
-              Develop a strong vibrant community around the project. Partner
-              with other projects to introduce our NFTs into huge audience of
-              Blast users. Organize interactive events and challenges to
-              maintain engagement and reward active members for their
-              contributions.
+              Develop a strong vibrant community around the project. Introduce
+              user leaderboard based on NFT ownership, referalls and activity.
+              Partner with other projects to introduce our NFTs into huge
+              audience of Blast users.
             </p>
           </div>
 
@@ -170,7 +185,7 @@
               Laying a strong foundation for the future, ensuring the project
               remains relevant, innovative, and financially viable in the
               fast-evolving NFT landscape. Announce future plans to keep the
-              community hooked.
+              community engaged.
             </p>
           </div>
 
@@ -200,10 +215,10 @@
                 ></span>
               </div>
               <p class="faq__answer hidden">
-                ZkStars - mint more NFTs and get unique stars. These stars have
-                a special utility, which we will tell you about a little later.
-                The more Stars you have, the more you will be able to interact
-                with achievements and be higher on the leaderboard 👀
+                BlastWarriors is an easy-to-use dApp where you can mint Bull or
+                Bear themed NFTs, inspired by financial markets. It operates on
+                the Blast L2 Network, ensuring that minting transactions are
+                fast, cheap, and secure.
               </p>
             </div>
 
@@ -219,9 +234,11 @@
                 ></span>
               </div>
               <p class="faq__answer hidden">
-                We have audited all the contracts. You do not sign any
-                transactions other than SafeMint for NFT mint. But you can do it
-                yourself, all the contracts you interact with are below:
+                Yes, minting is safe. Our contracts have undergone thorough
+                audits to ensure security. The only transactions you'll sign are
+                for the safe minting of NFTs, and you will not give any
+                permissions for transferring your funds. You can find the smart
+                contract addresses in our documentation.
               </p>
             </div>
 
@@ -237,13 +254,32 @@
                 ></span>
               </div>
               <p class="faq__answer hidden">
-                Absolutely! You are encouraged to mint as many NFTs as your
-                heart desires. Our platform imposes no hard caps on the number
-                of NFTs an individual can mint
+                Absolutely! You you are welcome to mint as many NFTs as you
+                desire. There is no hard cap on the number of nfts and
+                individual can mint.
               </p>
             </div>
 
-            <!-- Question 4 | Where can I see my transaction? -->
+            <!-- Question 4 | Can I mint multiple NFTs?-->
+            <div class="faq__item">
+              <div class="faq__question-box">
+                <p class="faq__question">Is there any incetive to mint?</p>
+                <span class="faq__icon-box"
+                  ><ion-icon
+                    class="faq__icon"
+                    name="caret-down-outline"
+                  ></ion-icon
+                ></span>
+              </div>
+              <p class="faq__answer hidden">
+                Yes indeed, users are rewarded with Blast Gold. All Gold that
+                BlastWarriors receive from Blast will be distributed to our
+                users based on the amount of NFTs they mint and frequency of
+                interactions with our dApp.
+              </p>
+            </div>
+
+            <!-- Question 5 | Where can I see my transaction? -->
             <div class="faq__item">
               <div class="faq__question-box">
                 <p class="faq__question">Where can I see my transaction?</p>
@@ -291,7 +327,12 @@
             <!-- Socials 1-->
             <div class="footer__col footer__socials">
               <a class="footer__social-link" href="#">Telegram</a>
-              <a class="footer__social-link" href="#">Twitter</a>
+              <a
+                class="footer__social-link"
+                href="https://twitter.com/BlastWarriors"
+                target="_blank"
+                >Twitter</a
+              >
             </div>
 
             <!-- Socials 2-->
