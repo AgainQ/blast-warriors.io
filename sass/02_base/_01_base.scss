@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  scroll-behavior: smooth;
+
+  @include respond(desktop-small) {
+    font-size: 56.25%; // 9px
+  }
+
+  @include respond(desktop-smaller) {
+    font-size: 50%; // 8px
+  }
+
+  @include respond(tablet-landscape) {
+    font-size: 50%; // 8px
+  }
+
+  @include respond(tablet-portrait) {
+    font-size: 43.75%; // 8px
+  }
+}

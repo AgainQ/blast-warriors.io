@@ -1,0 +1,24 @@
+.rewards {
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text-box:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+
+  &__sub-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #8d8e3e;
+
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    color: $color-text-default;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,58 @@
+.nft-card {
+  width: 40rem;
+  height: 65rem;
+
+  background-image: linear-gradient(
+    to right bottom,
+    $color-background-2,
+    $color-background-3
+  );
+  padding: 2.4rem;
+  border-radius: 4px;
+  border: 1px solid $color-black-1;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+
+  &--bear {
+    justify-self: end;
+  }
+
+  @include respond(tablet-portrait-small) {
+    justify-self: center;
+  }
+
+  &__img {
+    height: 45rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    //
+    border: 1px solid $color-black-1;
+    border-radius: 4px;
+    margin-bottom: 1.6rem;
+
+    &--bull {
+      background-image: url("../img/bull-nft.jpg");
+    }
+
+    &--bear {
+      background-image: url("../img/bear-nft.jpg");
+      justify-self: end;
+    }
+  }
+
+  &__name {
+    color: $color-black-2;
+    font-size: 3.6rem;
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 1.2rem;
+
+    @include respond(tablet-landscape) {
+      font-size: 3rem;
+    }
+  }
+}

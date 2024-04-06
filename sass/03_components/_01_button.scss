@@ -1,0 +1,115 @@
+// for btn connect
+// .test {
+//   display: none;
+
+//   @include respond(phone) {
+//     display: block;
+//   }
+// }
+
+.btn {
+  // ##### MAIN ######
+  &--main {
+    &:link,
+    &:visited {
+      @include buttonBase;
+      font-size: 3rem;
+      padding: 1.2rem 6.4rem;
+      @include gradientBackground($color-primary, $color-secondary);
+
+      @include respond(tablet-landscape) {
+        font-size: 2.4rem;
+        padding: 0.8rem 4.8rem;
+      }
+    }
+
+    &:hover {
+      @include gradientBackground($color-white, #eee);
+    }
+  }
+
+  // ##### CONNECT ######
+  &--connect {
+    &:link,
+    &:visited {
+      @include buttonBase;
+      font-size: $font-size-default;
+      padding: 0.6rem 3.2rem;
+      background-color: $color-primary-light-2;
+
+      @include respond(tablet-landscape) {
+        font-size: 1.4rem;
+        padding: 0.4rem 2.4rem;
+      }
+
+      @include respond(tablet-portrait-small) {
+        font-size: 1.4rem;
+      }
+
+      // @include respond(phone) {
+      //   line-height: 1.3;
+      //   padding: 0.8rem 3.2rem;
+      // }
+    }
+
+    &:hover,
+    &:active {
+      @include gradientBackground($color-white, #eee);
+    }
+  }
+
+  // ##### MINT ######
+  &--mint {
+    @include buttonBase;
+
+    font-size: 2.4rem;
+
+    padding: 1.2rem 2.4rem;
+    border: none;
+    width: 90%;
+
+    @include respond(tablet-landscape) {
+      font-size: 2rem;
+    }
+  }
+
+  // ##### ANIMATED ######
+  &--animated {
+    animation: moveToBottom 1s ease-out 0.7s;
+    animation-fill-mode: backwards;
+  }
+}
+
+//
+
+.btn-shadow {
+  display: inline-block;
+  overflow: hidden; /* To maintain the clip effect */
+  transition: all 0.3s;
+
+  &--big {
+    filter: drop-shadow(0 0 2.4rem rgba(#decc2d, 0.9));
+
+    &:hover {
+      filter: drop-shadow(0 0 2.4rem rgba(#fff, 0.9));
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      filter: drop-shadow(0 0 1.8rem rgba(#fff, 0.8));
+      transform: translateY(1px);
+    }
+  }
+
+  &--small {
+    filter: drop-shadow(0 0 10px rgba(#decc2d, 0.8));
+
+    &:hover {
+      filter: drop-shadow(0 0 10px rgba(#fff, 0.8));
+    }
+  }
+}
+
+.test {
+  text-align: center;
+}
